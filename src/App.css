@@ -1,0 +1,86 @@
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  outline: auto;
+  padding: 16px;
+  gap: 2rem;
+}
+
+aside {
+  display: grid;
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .page-wrapper {
+    grid-template-columns: 1fr;
+    padding: 8px;
+    gap: 1rem;
+  }
+
+  .col-25,
+  .col-75,
+  .submit {
+    width: 90%;
+    margin-top: 0;
+  }
+}
+
+.side-container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 16px;
+  height: fit-content;
+}
+
+.submit {
+  background-color: #041daa;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.submit:hover {
+  background-color: aqua;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 60%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+textarea {
+  height: 250px;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
