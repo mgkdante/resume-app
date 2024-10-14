@@ -4,12 +4,15 @@
   outline: auto;
   padding: 16px;
   gap: 2rem;
+  height: 100vh;
 }
 
 aside {
   display: grid;
   grid-template-rows: repeat(auto-fit, 1fr);
   gap: 1rem;
+  height: 100%;
+  overflow-x: scroll;
 }
 
 @media screen and (max-width: 600px) {
@@ -45,7 +48,7 @@ aside {
 }
 
 .submit:hover {
-  background-color: aqua;
+  background-color: #041452;
 }
 
 .col-25 {

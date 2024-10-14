@@ -1,9 +1,9 @@
 import "../App.css"
 
-const Submit = () => {
+const Submit = ({ onSubmit }) => {
   return (
     <div className="row">
-      <button type="button" className="submit">
+      <button type="submit" className="submit" onSubmit={onSubmit}>
         Submit
       </button>
     </div>

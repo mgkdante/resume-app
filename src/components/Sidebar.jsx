@@ -3,10 +3,24 @@ import { GeneralInfo } from "./GeneralInfo"
 import "../App.css"
 import { Experience } from "./Experience"
 
-const Sidebar = () => {
+const Sidebar = ({
+  onChangeFName,
+  onChangeLName,
+  onChangeAddress,
+  onChangePhone,
+  onChangeEmail,
+  onChangeWebsite,
+}) => {
   return (
     <aside>
-      <GeneralInfo />
+      <GeneralInfo
+        onChangeFName={onChangeFName}
+        onChangeLName={onChangeLName}
+        onChangeAddress={onChangeAddress}
+        onChangePhone={onChangePhone}
+        onChangeEmail={onChangeEmail}
+        onChangeWebsite={onChangeWebsite}
+      />
       <Education />
       <Experience />
     </aside>

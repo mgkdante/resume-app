@@ -1,13 +1,19 @@
 import "../App.css"
 
-const SideRow = ({ label, id, placeholder, type }) => {
+const SideRow = ({ label, id, placeholder, type, onChange }) => {
   return (
     <div className="row">
       <div className="col-25">
         <label htmlFor={id}>{label}</label>
       </div>
       <div className="col-75">
-        <input type={type} id={id} name={id} placeholder={placeholder} />
+        <input
+          type={type}
+          id={id}
+          name={id}
+          placeholder={placeholder}
+          onChange={onChange}
+        />
       </div>
     </div>
   )
